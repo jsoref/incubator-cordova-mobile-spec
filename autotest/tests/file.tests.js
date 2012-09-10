@@ -2182,7 +2182,7 @@ describe('File API', function() {
                 }, fail);
             });
 
-            waitsFor(function() { return entryCallback.wasCalled; }, "entryCAllback never called", Tests.TEST_TIMEOUT);
+            waitsFor(function() { return entryCallback.wasCalled; }, "entryCallback never called", Tests.TEST_TIMEOUT);
         });
         it("moveTo: directory to same parent with same name", function() {
             var file1 = "file1",
@@ -2484,7 +2484,7 @@ describe('File API', function() {
                 createFile(file1, entryCallback, fail);
             });
 
-            waitsFor(function() { return entryCallback.wasCalled; }, "entryCAllback never called", Tests.TEST_TIMEOUT);
+            waitsFor(function() { return entryCallback.wasCalled; }, "entryCallback never called", Tests.TEST_TIMEOUT);
         });
         it("moveTo: file onto existing directory", function() {
             var file1 = "entry.move.fod.file1",
