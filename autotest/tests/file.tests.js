@@ -3421,7 +3421,7 @@ describe('File API', function() {
         it("should be able to truncate", function() {
             var fileName = "writer.truncate",
                 rule = "There is an exception to every rule.  Except this one.",
-                fail = createFail('FileWRiter'),
+                fail = createFail('FileWriter'),
                 theWriter,
                 // writes file content
                 write_file = function(fileEntry) {
